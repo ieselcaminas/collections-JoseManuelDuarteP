@@ -55,15 +55,19 @@ public class Altura {
 
     public static void main(String[] args) {
         ArrayList<Double> alturas = new ArrayList<>();
+        int numAlu;
+        double media;
+        int altInferior;
+        int altSuperior;
 
         System.out.println("Ingrese el numero de alumnos:");
-        int numAlu = numeroAlumnos();
+        numAlu = numeroAlumnos();
 
         System.out.println("Ingrese las alturas del alumnado:");
         leerAlturas(alturas, numAlu);
-        double media = media(alturas, numAlu);
-        int altInferior = calcularAlumnosAlturaInferior(alturas,media);
-        int altSuperior = calcularAlumnosAlturaSuperior(alturas,media);
+        media = media(alturas, numAlu);
+        altInferior = calcularAlumnosAlturaInferior(alturas,media);
+        altSuperior = calcularAlumnosAlturaSuperior(alturas,media);
 
         System.out.println(mostrarResultados(alturas, media, altSuperior, altInferior));
     }
