@@ -2,6 +2,26 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Altura {
+
+    public static void main(String[] args) {
+        ArrayList<Double> alturas = new ArrayList<>();
+        int numAlu;
+        double media;
+        int altInferior;
+        int altSuperior;
+
+        System.out.println("Ingrese el numero de alumnos:");
+        numAlu = numeroAlumnos();
+
+        System.out.println("Ingrese las alturas del alumnado:");
+        leerAlturas(alturas, numAlu);
+        media = media(alturas, numAlu);
+        altInferior = calcularAlumnosAlturaInferior(alturas,media);
+        altSuperior = calcularAlumnosAlturaSuperior(alturas,media);
+
+        System.out.println(mostrarResultados(alturas, media, altSuperior, altInferior));
+    }
+
     public static int numeroAlumnos() {
         Scanner entrada = new Scanner(System.in);
         return entrada.nextInt();
@@ -51,24 +71,5 @@ public class Altura {
                 altInferior + " Inferior la media.\n";
 
         return resultado;
-    }
-
-    public static void main(String[] args) {
-        ArrayList<Double> alturas = new ArrayList<>();
-        int numAlu;
-        double media;
-        int altInferior;
-        int altSuperior;
-
-        System.out.println("Ingrese el numero de alumnos:");
-        numAlu = numeroAlumnos();
-
-        System.out.println("Ingrese las alturas del alumnado:");
-        leerAlturas(alturas, numAlu);
-        media = media(alturas, numAlu);
-        altInferior = calcularAlumnosAlturaInferior(alturas,media);
-        altSuperior = calcularAlumnosAlturaSuperior(alturas,media);
-
-        System.out.println(mostrarResultados(alturas, media, altSuperior, altInferior));
     }
 }
