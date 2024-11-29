@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Loteria {
+public class Sorteo {
     public static void main(String[] args) {
         ArrayList<String> numeros = new ArrayList<>();
         numeros.add("1112");
@@ -10,11 +10,11 @@ public class Loteria {
         numeros.add("3333");
         numeros.add("4444");
 
-        System.out.println(ultimoNumero(numeros));
+        System.out.println(terminaciones(numeros));
 
     }
 
-    public static Map<Character,Integer> ultimoNumero(ArrayList<String> numeros) {
+    public static Map<Character,Integer> terminaciones(ArrayList<String> numeros) {
         Map<Character, Integer> mapa = new HashMap<>();
         Character ultimo;
         Integer cont;
