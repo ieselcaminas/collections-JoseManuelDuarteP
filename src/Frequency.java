@@ -8,11 +8,11 @@ public class Frequency {
         palabras.add("Mortadela");
         palabras.add("Chorizo");
 
-        System.out.println(contarPalabras(palabras));
+        System.out.println(frequency(palabras));
 
     }
 
-    public static Map<String,Integer> contarPalabras(ArrayList<String> palabras) {
+    public static Map<String,Integer> frequency(ArrayList<String> palabras) {
         Map<String,Integer> map = new HashMap<>();
 
         for (String palabra : palabras) {

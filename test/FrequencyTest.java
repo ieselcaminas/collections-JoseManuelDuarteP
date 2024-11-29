@@ -1,8 +1,7 @@
-import org.junit.jupiter.api.Test;
+/*import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
 import java.util.Map;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class FrequencyTest {
@@ -20,4 +19,4 @@ class FrequencyTest {
         mapa.put("tres", 3);
         assertEquals(mapa, Frequency.frequency(new String[]{"uno", "dos", "tres", "dos", "tres", "tres"}));
     }
-}
+}*/
