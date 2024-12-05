@@ -13,6 +13,7 @@ public class CountCountries {
                 ("files/Colfuturo-Seleccionados.csv"));
         String linea;
         Map<String,Integer> mapa = new HashMap<>();
+        lector.readLine();
 
         while ((linea = lector.readLine()) != null) {
             String[] datos = linea.split(",");
