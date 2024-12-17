@@ -15,6 +15,7 @@ public class Ejercicio4 {
         int masRepetido = 0;
         int moda = 0;
 
+        //Acumulamos valores en el mapa
         for (int i = 0; i < numeros.length; i++) {
 
             if (mapa.containsKey(numeros[i])) {
@@ -25,6 +26,7 @@ public class Ejercicio4 {
 
         }
 
+        //Comparamos valores para saber cual se repite más
         for (Map.Entry<Integer, Integer> entry : mapa.entrySet()) {
             if (entry.getValue() > masRepetido) {
                 masRepetido = entry.getValue();
