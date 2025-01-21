@@ -44,7 +44,7 @@ public class Tesoro implements Comparable<Tesoro>{
     @Override
     public int compareTo(Tesoro other) {
         if (this.valor == other.valor && this.peso == other.peso) {
-            return indice - other.indice;
+            return this.indice - other.indice;
         } else if (this.valor == other.valor) {
             return this.peso - other.peso;
         } else {
